@@ -349,7 +349,6 @@ int id action_mode_close_button 0x7f090020
 int id activity_chooser_view_content 0x7f090021
 int id always 0x7f090014
 int id beginning 0x7f09001b
-int id button1 0x7f090042
 int id checkBox1 0x7f090043
 int id checkbox 0x7f090029
 int id collapseActionView 0x7f090015
@@ -377,6 +376,7 @@ int id progress_circular 0x7f090007
 int id progress_horizontal 0x7f090008
 int id radio 0x7f09002b
 int id radioButton1 0x7f090044
+int id recycler 0x7f090042
 int id search_badge 0x7f090035
 int id search_bar 0x7f090034
 int id search_button 0x7f090036

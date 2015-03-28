@@ -20,8 +20,8 @@ public class MainActivity extends FragmentActivity {
 	
 	private ArrayList<Fragment> mFragments;
 	
-	private ViewPagerAdapter mAdapter;
-
+	private ViewPagerAdapter mViewPagerAdapter;
+	
 	private OnClickListener mNavigationListener = new OnClickListener() {
 
 		@Override
@@ -56,10 +56,11 @@ public class MainActivity extends FragmentActivity {
         mFragments.add(new FragmentTab2());
         mFragments.add(new FragmentTab3());
        
-        mAdapter = new ViewPagerAdapter(getSupportFragmentManager(), mFragments);
+        mViewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), mFragments);
         mViewPager.setOffscreenPageLimit(mFragments.size());
-        mViewPager.setAdapter(mAdapter);
+        mViewPager.setAdapter(mViewPagerAdapter);
         
         mSlidingTab.setViewPager(mViewPager);
+        
     }
 }
